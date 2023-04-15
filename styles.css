@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #333;
+  font-family: 'Press Start 2P', cursive;
+}
+
+#game-container {
+  width: 600px;
+  height: 600px;
+  border: 4px solid #4CAF50;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(20, 30px);
+  grid-template-rows: repeat(20, 30px);
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+
+.wall {
+  background-color: #212121;
+  border: 1px solid #333;
+}
+
+.player {
+  background-image: url('player.png'); /* Add a player image */
+  background-size: cover;
+}
+
+.enemy {
+  background-image: url('portal.png'); /* Add an enemy image */
+  background-size: cover;
+}
